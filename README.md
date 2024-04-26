@@ -5,4 +5,23 @@ Note that this script is designed for real-time application, so please replace t
 
 For full details of the methodology and citation, please refer to: Wijnands, J.S., Apituley, A., Alves Gouveia, D., Noteboom, J.W. (2024). Deep-Pathfinder: a boundary layer height detection algorithm based on image segmentation. Atmospheric Measurement Techniques, doi: https://doi.org/10.5194/amt-2023-80
 
-Installation instructions: .........
+# Installation instructions
+
+This script has several dependencies. The following example shows how to set up a suitable Anaconda environment:
+
+```
+conda create --name Deep-Pathfinder python=3.10
+conda activate Deep-Pathfinder
+pip install "tensorflow<2.11"
+pip install opencv-python
+conda install netCDF4
+conda install xarray
+conda install matplotlib
+pip install "suntime==1.2.5"
+```
+
+To apply the Deep-Pathfinder algorithm on the last 45 minutes of ceilometer data in the supplied NetCDF file, run:
+
+```
+python Deep-Pathfinder_inference.py
+```
