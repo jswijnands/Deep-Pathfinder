@@ -10,14 +10,14 @@ For full details of the methodology and citation, please refer to: Wijnands, J.S
 This script has several dependencies. The following example shows how to set up a suitable Anaconda environment:
 
 ```
-conda create --name Deep-Pathfinder python=3.10
+conda create --name Deep-Pathfinder python=3.10 -y
 conda activate Deep-Pathfinder
-pip install "tensorflow==2.10"
-pip install opencv-python
-conda install netCDF4
-conda install xarray
-conda install matplotlib
-pip install "suntime==1.2.5"
+pip install -y "tensorflow==2.10"
+pip install -y opencv-python
+conda install -y netCDF4
+conda install -y xarray
+conda install -y matplotlib
+pip install -y "suntime==1.2.5"
 ```
 
 To apply the Deep-Pathfinder algorithm on the last 45 minutes of ceilometer data in the supplied NetCDF file, run:
