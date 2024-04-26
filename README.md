@@ -12,7 +12,7 @@ This script has several dependencies. The following example shows how to set up 
 ```
 conda create --name Deep-Pathfinder python=3.10
 conda activate Deep-Pathfinder
-pip install "tensorflow<2.11"
+pip install "tensorflow==2.10"
 pip install opencv-python
 conda install netCDF4
 conda install xarray
