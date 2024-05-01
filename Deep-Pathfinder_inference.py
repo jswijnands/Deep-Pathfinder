@@ -1,5 +1,6 @@
 #load libraries
 import os
+import sys
 import shutil
 import numpy as np
 import tensorflow as tf
@@ -9,8 +10,7 @@ import xarray as xr
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import pytz
-import pkg_resources
-pkg_resources.require("suntime==1.2.5") #important: suntime v1.2.5 required
+from importlib.metadata import version
 from suntime import Sun
 from datetime import datetime
 
@@ -116,9 +116,12 @@ def get_blh(altitude_predictions):
   return (PIXELS_SPATIAL - index_blh) * SPATIAL_RES
 
 def main():
+  if version("suntime") != "1.2.5":
+      sys.exit("Suntime v1.2.5 required for correct detection of nighttime indicator.")
+
   #create architecture and load saved weights
   model = create_model_architecture(output_channels=OUTPUT_CLASSES)
-  model.load_weights(TENSORFLOW_MODEL)
+  model.load_weights(TENSORFLOW_MODEL).expect_partial()
 
   #load ceilometer data from NetCDF file
   input_data = xr.load_dataset(NETCDF_FILE)
