@@ -7,7 +7,7 @@ For full details of the methodology and citation, please refer to: Wijnands, J.S
 
 # Installation instructions
 
-This script has several dependencies. The following example shows how to set up a suitable Anaconda environment:
+This script has several dependencies. For example, the following shows how to set up a suitable Anaconda environment:
 
 ```
 conda create --name Deep-Pathfinder python=3.10 -y
