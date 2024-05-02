@@ -5,7 +5,7 @@ Note that this script is designed for real-time application, so please replace t
 
 For full details of the methodology and citation, please refer to: Wijnands, J.S., Apituley, A., Alves Gouveia, D., Noteboom, J.W. (2024). Deep-Pathfinder: a boundary layer height detection algorithm based on image segmentation. Atmospheric Measurement Techniques, doi: https://doi.org/10.5194/amt-2023-80
 
-# Installation instructions
+# Installation
 
 This script has several dependencies. For example, the following shows how to set up a suitable Anaconda environment:
 
