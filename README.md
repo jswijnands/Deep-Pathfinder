@@ -12,7 +12,7 @@ This script has several dependencies. For example, the following shows how to se
 ```
 conda create --name Deep-Pathfinder python=3.10 -y
 conda activate Deep-Pathfinder
-conda install -y "tensorflow==2.10"
+conda install -y tensorflow==2.10
 pip install opencv-python
 conda install -y netCDF4
 conda install -y xarray
