@@ -1,7 +1,7 @@
 # Deep-Pathfinder
 This repository provides an implementation of the Deep-Pathfinder algorithm, extracting mixing layer height information from Lufft CHM15k ceilometer data using computer vision techniques.
 
-<img src="concept.png" width="19%" />
+<img src="concept.png" width="40%" />
 
 Note that this script is designed for real-time application, so please replace the NetCDF file with your latest observation data (at least 45 minutes). For real-time inference, the value of the nighttime indicator is set based on the current time when the script is run. If you are interested in analysing historical data, this should be changed.
 
