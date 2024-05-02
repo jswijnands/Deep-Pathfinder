@@ -21,8 +21,10 @@ pip install "suntime==1.2.5"
 
 ```
 
-To apply the Deep-Pathfinder algorithm using the last 45 minutes of ceilometer data in the supplied NetCDF file, run the command below. Results will be written to the `data` folder.
+To apply the Deep-Pathfinder algorithm using the last 45 minutes of ceilometer data in the supplied NetCDF file, run the command below.
 
 ```
 python Deep-Pathfinder_inference.py
 ```
+
+Results will be written to the `data` folder: (i) plots with a black line representing Deep-Pathfinder results and (ii) mixing layer height values added as a Deep-Pathfinder variable to a copy of the NetCDF input file.
