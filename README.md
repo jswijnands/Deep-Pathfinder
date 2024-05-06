@@ -17,8 +17,8 @@ conda activate Deep-Pathfinder
 conda install -y netCDF4
 conda install -y -c conda-forge xarray dask bottleneck
 python -m pip install "tensorflow==2.10"
+pip install matplotlib
 pip install opencv-python
-conda install -y matplotlib
 pip install "suntime==1.2.5"
 
 ```
